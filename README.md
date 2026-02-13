@@ -150,5 +150,9 @@ cd ..
 Pointant cette fois-ci sur votre nouveau repository.
 
 ## Notes de conception
-> [!TIP]
-> Ce paragraphe est le vôtre, vous pouvez y consigner vos notes, réflexion voire présenter succintement l'architecture de votre solution
+
+
+1ère étape : mise en place de debezium et d'un consumer de la base eurynome
+
+2ème étape : insertion des données dans la base de donnée my greaterp
+
