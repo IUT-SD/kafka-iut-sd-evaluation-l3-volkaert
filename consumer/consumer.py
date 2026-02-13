@@ -5,15 +5,15 @@ import uuid
 import time
 
 # Define the Kafka broker and topic
-broker = 'my-kafka.kylianvkr.svc.cluster.local:9092'
+broker = 'my-kafka.kylianvkr-dev.svc.cluster.local:9092'
 topic = 'dbserver1.customer'
 
 # Definie the database connection parameters
-db_host = 'eurynome-db.kylian.vkr.svc.cluster.local'
+db_host = 'eurynome-db'
 db_port = 3306
-db_user = 'mysqluser'
-db_password = 'changeme'
-db_name = 'crm'
+db_user = 'eurynomeuser'
+db_password = 'eurynomepw'
+db_name = ''
 
 # Create a Kafka consumer
 try:
