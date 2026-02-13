@@ -13,7 +13,7 @@ db_host = 'eurynome-db'
 db_port = 3306
 db_user = 'eurynomeuser'
 db_password = 'eurynomepw'
-db_name = ''
+db_name = 'mysql'
 
 # Create a Kafka consumer
 try:
@@ -41,10 +41,11 @@ try:
         user=db_user,
         password=db_password,
         host=db_host,
-        port=db_port,
-        database=db_name
+        port=db_port
     )
     print("Connected to MariaDB database")
+    cursor = conn.cursor()
+    print(cursor.execute("SHOW DATABASES;"))
 except mysql.connector.Error as e:
     print(f"Error connecting to MariaDB database: {e}")
     exit(1)
